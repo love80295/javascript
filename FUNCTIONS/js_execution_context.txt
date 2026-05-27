@@ -1,0 +1,9 @@
+java script is single threaded
+1 - > we have global execution context
+2 - > function execution context
+3 - > Eval execution context
+
+code executed in different phases
+
+1 - > memory creation phases
+2 -> execution phase
