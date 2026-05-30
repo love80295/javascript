@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="days">monday</div>
+        <div class="days">tuesday</div>
+        <div class="days">wednesday</div>
+        <div class="days">thrusday</div>
+    </div>
+</body>
+<script>
+     const parent = document.querySelector('.parent');
+    // // console.log(parent);
+    // // console.log(parent.children[1]);
+    // for(let i = 0 ; i<parent.children.length ; i++){
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    // parent.children[0].style.color = "orange";
+    // console.log(parent.firstElementChild.innerHTML);
+    // console.log(parent.lastElementChild.innerHTML);
+    const dayone = document.querySelector('.days');
+    // console.log(dayone.innerHTML);
+    // // to jump to its parent
+    // console.log(dayone.parentElement);
+    // // to jum to next element we use
+    // console.log(dayone.nextElementSibling.innerHTML);
+
+    console.log("nodes -->"  , parent.childNodes);
+
+    // element creation
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = 'main';
+    div.id = 'id1';
+    div.innerText = "tum dono ki....";
+    // now to add on webpage
+    
+    document.body.appendChild(div);
+    </script>
+</html>
