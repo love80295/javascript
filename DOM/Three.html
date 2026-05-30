@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new file</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JAVSCRIPT</li>
+    </ul>
+    
+</body>
+<script>
+    function addname(lname){
+        const ele = document.createElement('li');
+        ele.innerHTML = `${lname}`;
+        document.querySelector('.language').appendChild(ele);
+    }
+    addname("phython");
+    addname("java");
+    addname("C");
+    addname("C++");
+
+    // edit         
+    const edit = document.querySelector('.language li:nth-child(2)');
+    const newli = document.createElement('li');
+    newli.textContent = "mojo";
+    edit.replaceWith(newli)
+</script>
+</html>
