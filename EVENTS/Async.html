@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defwg</title>
+</head>
+<body>
+    <h1>bkcx</h1>;
+    <button id="stop">stop</button>
+</body>
+<script>
+    const ss = setTimeout(function(){
+        console.log("hey")
+    },6000);
+    // now we want clear timeout
+    document.getElementById('stop').addEventListener('click' , function(){
+        clearTimeout(ss);
+        console.log("mkba"); 
+    })
+</script>
+</html>
