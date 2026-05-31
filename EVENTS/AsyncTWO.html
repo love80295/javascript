@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defwg</title>
+</head>
+<body>
+    <h1>bkcx</h1>;
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const sayDate = function(){
+        console.log('love' , Date.now());
+    }
+   // const inte = setInterval(sayDate , 2000);
+    const inte = function(){
+      return  setInterval(sayDate , 2000);
+    }
+    let id;
+   // clearInterval(inte)
+    document.getElementById('start').addEventListener('click' , function(){
+        id =  inte();
+    })
+    document.getElementById('stop').addEventListener('click' , function(){
+        clearInterval(id);
+    })
+
+</script>
+</html>
