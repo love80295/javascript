@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const requestURl = 'https://api.github.com/users/love80295';
+       const xhr = new XMLHttpRequest(); // by this we can sebd the request and receive the request
+       xhr.open('GET' , requestURl)
+       
+       // this is used to send the request . // consist of two parameters 1st is type of request you want to send and other one. is 
+// and 2nd one is string which contains some url from which you want data
+// open apne aap call nahi hota h use call lagwaya jata through send
+
+  // track the request;
+  xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState===4){
+        const data = JSON.parse(this.responseText);  
+        console.log(data.followers); 
+    }
+  }
+xhr.send();
+    </script>
+    
+</body>
+</html>
